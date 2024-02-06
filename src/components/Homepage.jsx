@@ -101,7 +101,7 @@ const Homepage = () => {
 
       <div className='p-1'>
         <h2 className='text-center'>Items</h2>
-        <div className='grid grid-cols-5'>
+        <div className='grid grid-cols-4'>
           {
             DummyProducts.map((value) => {
               return (

@@ -274,11 +274,11 @@ export const DummyProducts = [
     },
     {
         id: 24,
-        title: 'THE SERAPHIC CARAT A CHANDELIER',
-        image: 'https://belacasalighting.com/cdn/shop/products/1_d27b05b2-a592-4c1b-8d0e-40f4584d0e70.jpg?v=1662626758',
-        type: 'lighting',
-        price: 105020,
-        crossprice: '₹ 115,020',
+        title: 'Sheesham Wood Arm Chair In Passion Mahogany',
+        image: 'https://homesofrajasthan.com/wp-content/uploads/2023/04/ch10-860x860.jpg',
+        type: 'chair',
+        price: 20.020,
+        crossprice: '₹ 18,020',
         description: `NO. OF BULB: 26
         HOLDER: E14
         BULB PROVIDED: NO
@@ -287,9 +287,9 @@ export const DummyProducts = [
     },
     {
         id: 25,
-        title: 'THE SERAPHIC CARAT A CHANDELIER',
-        image: 'https://belacasalighting.com/cdn/shop/products/1_d27b05b2-a592-4c1b-8d0e-40f4584d0e70.jpg?v=1662626758',
-        type: 'lighting',
+        title: 'Classic Sheesham Wood Arm Chair In Provincial Teak Finish',
+        image: 'https://homesofrajasthan.com/wp-content/uploads/2023/04/ch19.jpg',
+        type: 'chair',
         price: 105020,
         crossprice: '₹ 115,020',
         description: `NO. OF BULB: 26
@@ -300,8 +300,8 @@ export const DummyProducts = [
     },
     {
         id: 26,
-        title: 'THE SERAPHIC CARAT A CHANDELIER',
-        image: 'https://belacasalighting.com/cdn/shop/products/1_d27b05b2-a592-4c1b-8d0e-40f4584d0e70.jpg?v=1662626758',
+        title: 'Solid Wood 2- Door Wardrobe  Black Finish',
+        image: 'https://homesofrajasthan.com/wp-content/uploads/2023/11/BSD-122-BLACK_WB1_20231122_153116406-860x860.jpg',
         type: 'lighting',
         price: 105020,
         crossprice: '₹ 115,020',
@@ -313,10 +313,10 @@ export const DummyProducts = [
     },
     {
         id: 27,
-        title: 'THE SERAPHIC CARAT A CHANDELIER',
-        image: 'https://belacasalighting.com/cdn/shop/products/1_d27b05b2-a592-4c1b-8d0e-40f4584d0e70.jpg?v=1662626758',
-        type: 'lighting',
-        price: 105020,
+        title: ' Wood Marble Top 8 Seater Dining Set With Chairs',
+        image: 'https://homesofrajasthan.com/wp-content/uploads/2023/04/1-88-860x860.jpg',
+        type: 'Dining table',
+        price: 185020,
         crossprice: '₹ 115,020',
         description: `NO. OF BULB: 26
         HOLDER: E14
@@ -326,10 +326,10 @@ export const DummyProducts = [
     },
     {
         id: 28,
-        title: 'THE SERAPHIC CARAT A CHANDELIER',
-        image: 'https://belacasalighting.com/cdn/shop/products/1_d27b05b2-a592-4c1b-8d0e-40f4584d0e70.jpg?v=1662626758',
+        title: 'Solid Wood Rattan Black Finish Compact 2 Door Wardrobe',
+        image: 'https://homesofrajasthan.com/wp-content/uploads/2023/11/FT-WARD-02-BLACK_WB1_600x_20231108_115344956-860x860.jpg',
         type: 'lighting',
-        price: 105020,
+        price: 155020,
         crossprice: '₹ 115,020',
         description: `NO. OF BULB: 26
         HOLDER: E14
@@ -342,7 +342,7 @@ export const DummyProducts = [
         title: 'THE SERAPHIC CARAT A CHANDELIER',
         image: 'https://belacasalighting.com/cdn/shop/products/1_d27b05b2-a592-4c1b-8d0e-40f4584d0e70.jpg?v=1662626758',
         type: 'lighting',
-        price: 105020,
+        price: 205020,
         crossprice: '₹ 115,020',
         description: `NO. OF BULB: 26
         HOLDER: E14
@@ -352,9 +352,9 @@ export const DummyProducts = [
     },
     {
         id: 30,
-        title: 'THE SERAPHIC CARAT A CHANDELIER',
-        image: 'https://belacasalighting.com/cdn/shop/products/1_d27b05b2-a592-4c1b-8d0e-40f4584d0e70.jpg?v=1662626758',
-        type: 'lighting',
+        title: 'THE SERAPHIC Table',
+        image: 'https://homesofrajasthan.com/wp-content/uploads/2023/04/1-17.jpg',
+        type: 'table',
         price: 105020,
         crossprice: '₹ 115,020',
         description: `NO. OF BULB: 26
@@ -365,9 +365,9 @@ export const DummyProducts = [
     },
     {
         id: 31,
-        title: 'THE SERAPHIC CARAT A CHANDELIER',
-        image: 'https://belacasalighting.com/cdn/shop/products/1_d27b05b2-a592-4c1b-8d0e-40f4584d0e70.jpg?v=1662626758',
-        type: 'lighting',
+        title: 'Swis kindom Sofa',
+        image: 'https://homesofrajasthan.com/wp-content/uploads/2022/11/sauvage-chesterfield-leather-sofa-3-910x1155-1.jpg',
+        type: 'Sofa',
         price: 105020,
         crossprice: '₹ 115,020',
         description: `NO. OF BULB: 26
