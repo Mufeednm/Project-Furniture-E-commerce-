@@ -7,7 +7,7 @@ export const DummyProducts = [
         image: 'https://homesofrajasthan.com/wp-content/uploads/2023/05/BD67P-700x700.jpeg',
         type: 'bed',
         price:  36000,
-        crossprice: '',
+        crossprice: '42000',
         description: `100% Handmade and Stylish Bed.
         Made with premium quality Mango Wood.
         Unique carving process.
@@ -20,7 +20,7 @@ export const DummyProducts = [
         image: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRQTjZt_2icSQDyBV3OH_HUPGXVAFRKYLZstSGA93zJ32XICXM9ts3hjSwM7WRcygfipNP9gK2gY5hX0CqUwhklMSXLbd5IB9_20BPkQEg&usqp=CAE',
         type: 'bed',
         price: 52999,
-        crossprice: '',
+        crossprice: '60,000',
         description: `Nice Maple offers the best in comfort with elan. The collections are a series of modern trendy designs, simple yet striking and represent the ideals of minimalism.`,
         qty: 1
     },
@@ -30,7 +30,7 @@ export const DummyProducts = [
         image: 'https://ii1.pepperfry.com/media/catalog/product/j/a/1100x1210/jacklin-king-size-bed-in-cream-colour-by-durian-jacklin-king-size-bed-in-cream-colour-by-durian-dalq6a.jpg',
         type: 'bed',
         price: 39780,
-        crossprice: '',
+        crossprice: '45,000',
         description: `Brand: Durian\nPrimary Material: Fabric\nProduct Rating: 4.5\nRoom Type: Bedroom\nStorage: No Storage\nWarranty: 5 Years' Warranty`,
         qty: 1
     },
@@ -40,7 +40,7 @@ export const DummyProducts = [
         image: 'https://desket.in/cdn/shop/products/Screenshot2022-02-14101501_720x.jpg?v=1644817022',
         type: 'bed',
         price: 27930,
-        crossprice: '',
+        crossprice: '32,000',
         description: `This Desket Lagos Upholstered Bed -- which is healthy and environmentally friendly, without odor, and enjoys a quality of life. The widened, thickened and encrypted row frame is strong and stable.`,
         qty: 1
     },
@@ -50,7 +50,7 @@ export const DummyProducts = [
         image: 'https://dekorspace.com/cdn/shop/files/dk-539-1.jpg?v=1689316294',
         type: 'decor',
         price: 27930,
-        crossprice: '',
+        crossprice: '35,000',
         description: `A wall clock which makes any room stand out. The black & golden touch
         makes it one of a kind wall clock, the elegance of which is class apart.
         It is more of a cherished piece of decor which acts as a statement piece
@@ -65,7 +65,7 @@ export const DummyProducts = [
         image: 'https://www.whiteteak.com/media/catalog/product/h/l/hl64-10002_14__1.jpg?width=562&height=560&canvas=562,560&optimize=high&fit=bounds',
         type: 'lighting',
         price: 69200,
-        crossprice: '',
+        crossprice: '70,000',
         description: `Intricately crafted shapes suspended through ultra-thin aircraft cables and
         inbuilt LED’s, she’s the stunner that’s set to dazzle you like the stars.
         The 3 built-in LED lights can be brightened or dimmed with the Remote
@@ -78,7 +78,7 @@ export const DummyProducts = [
         image: 'https://i0.wp.com/shopps.in/wp-content/uploads/2023/07/H148c1d4c98ec48fd8abc4ee54c9d95e50.jpg?resize=504%2C504&ssl=1',
         type: 'sofa',
         price: 190000,
-        crossprice: '',
+        crossprice: '200000',
         description: `An L shape sofa, as the name suggests, is designed in the
         shape of the letter “L.” It provides ample seating space for family and
         guests while optimizing the available area in your living room. The
@@ -92,7 +92,7 @@ export const DummyProducts = [
         image: 'https://i0.wp.com/shopps.in/wp-content/uploads/2023/01/1b2cfdea3bc542aaa420d0731112401a.webp?resize=504%2C504&ssl=1',
         type: 'table',
         price: 12500,
-        crossprice: '',
+        crossprice: '16,000',
         description: `This table is made of the highest quality stainless steel and finished with
         a beautiful coating. It is rust proof, scratch resistant, and easy to clean.
         Plus, it comes in a variety of colours to match any decor.`,
@@ -104,7 +104,7 @@ export const DummyProducts = [
         image: 'https://ii1.pepperfry.com/media/catalog/product/m/o/1100x1210/modern-living-astor-4-door-wardrobe-in-grey-colour-by-spacewood-modern-living-astor-4-door-wardrobe--yws65k.jpg',
         type: 'cupboard',
         price: 68183,
-        crossprice: '',
+        crossprice: '70,000',
         description: `Brand :Spacewood
         Assembly :Carpenter Assembly
         Dimensions (In Centimeters) :H 211 x W 180 x D 56
@@ -201,7 +201,7 @@ export const DummyProducts = [
         id: 17,
         title: '4 Door Wardrobes',
         image: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSfqcaJ3KDgV2U6bNYisFBnO5uxzTkFSpicTeRTNGR97bnjmu2KdUiLN3hXyNIq_4o_IV9rsPjn4T0mcG69vHgktj_qVcV6esv_frrOli0&usqp=CAE',
-        type: 'cupboard',
+        type: 'Wardrobe',
         price: 89999,
         crossprice: '₹ 166,999',
         description: `This 4 doors wardrobe Includes; 11 fixed shelves, 1 aluminum hanging rod and 2 drawers. The wardrobe is made of high-quality melamine faced chipboard finished in black marble-look and walnut colour. Assembly elements and guide are included in the box. It has an uncomplicated assembly structure for your convenience.`,
@@ -211,7 +211,7 @@ export const DummyProducts = [
         id: 18,
         title: 'Nordic Wardrobe Modern Minimalist – Small Wide Wardrobe',
         image: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS6vtx9bpMO6zhOM82bsqoYIg18jbJCGsKPrydD7RZNd4Hzf-pOVX0SR3m01yQMdratDBKy77IOUhReyqxo8JUZkUTerGgPdpGRS5IcGM4&usqp=CAE',
-        type: 'cupboard',
+        type: 'Wardrobe',
         price: 70899,
         description: `Nordic wardrobe modern minimalist small apartment furniture storage bedroom economical door opener chef`,
         qty: 1
@@ -328,7 +328,7 @@ export const DummyProducts = [
         id: 28,
         title: 'Solid Wood Rattan Black Finish Compact 2 Door Wardrobe',
         image: 'https://homesofrajasthan.com/wp-content/uploads/2023/11/FT-WARD-02-BLACK_WB1_600x_20231108_115344956-860x860.jpg',
-        type: 'lighting',
+        type: 'Wardrobe',
         price: 155020,
         crossprice: '₹ 115,020',
         description: `NO. OF BULB: 26
@@ -367,7 +367,7 @@ export const DummyProducts = [
         id: 31,
         title: 'Swis kindom Sofa',
         image: 'https://homesofrajasthan.com/wp-content/uploads/2022/11/sauvage-chesterfield-leather-sofa-3-910x1155-1.jpg',
-        type: 'Sofa',
+        type: 'sofa',
         price: 105020,
         crossprice: '₹ 115,020',
         description: `NO. OF BULB: 26
