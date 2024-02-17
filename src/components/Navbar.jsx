@@ -2,15 +2,24 @@ import React, {  useState } from 'react'
 
 import { Link, useNavigate } from 'react-router-dom'
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { RiAdminFill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa";
+import { CiLogout } from "react-icons/ci";
 import { useContext } from 'react';
 import UseeContext from '../Globalcontext/UseConstext';
 
 
 const Navbar = () => {
+
   
   // console.log( "headpage", logins.name);
   const {user,setUser,logins,setLogins , }=useContext(UseeContext)
+
+   const handleLogout = ()=>{
+    setLogins(null)
+    navigate("/")
+   }
+  
   const navigate = useNavigate();
   const [searchData, setsearchData]=useState("")
   const handleclick= (e)=>{
@@ -41,16 +50,28 @@ const Navbar = () => {
         <div className="flex items-center gap-4 " >
         
         <p  className=''> { logins ? logins.name : "not logged"}</p>
+  <div> 
+    <button onClick={handleLogout}> <CiLogout /></button>
+       </div>
           <Link to={"/signup"} >
         
             
             <button className="text-4xl">  
               <FaUser /></button></Link>
+  
+             <div className='admin' >   
+               <button onClick={()=>navigate("/AdminLogin")} className="text-4xl" > <RiAdminFill /></button>
+             </div>
             <div className='cart button'>
             
-         <button  onClick={()=>{logins? navigate("/cart") : navigate("/Signin") }} className='text-4xl'> 
+
+         <button  onClick={()=>{logins? navigate("/cart") : navigate("/Signin") }} className='text-4xl p-0 flex'> 
          
-           <AiOutlineShoppingCart /></button> 
+         <span className=' text-xs p-0'>
+         {logins && logins.cart.length}
+         </span> 
+         <AiOutlineShoppingCart />
+          </button> 
             </div>
         </div>
 

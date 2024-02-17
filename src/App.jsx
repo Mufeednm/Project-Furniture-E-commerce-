@@ -15,6 +15,8 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Cart from './components/Cart'
 import Search from './components/Search'
+import AdminLogin from './components/Admin/AdminLogin'
+import AdminPage from './components/Admin/AdminPage'
 import UserContextprovider from './Globalcontext/UserContextprovider'
 
 const App = () => {
@@ -26,6 +28,9 @@ const App = () => {
 <Routes>
       
 <Route path='/'element={<Homepage/>} >   </Route>
+
+// <Route path='/AdminLogin'element={<AdminLogin/>} >   </Route>
+// <Route path='/AdminPage'element={<AdminPage/>} >   </Route>
 // <Route path='/Payment'element={<Payment/>} >   </Route>
 // <Route path='/Beds'element={<Beds/>} >   </Route>
 // <Route path='/Chairs'element={<Chairs/>} >   </Route>
