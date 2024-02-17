@@ -70,9 +70,9 @@ const Homepage = () => {
       <div className="p-1">
         <h2 className="text-center">Items</h2>
         <div className="grid grid-cols-4">
-          {DummyProducts.map((value) => {
+          {DummyProducts.map(( value ,index) => {
             return (
-              <div className="">
+              <div key={index} className="">
                 <img
                   style={{ height: 500, padding: 10 }}
                   src={value.image}

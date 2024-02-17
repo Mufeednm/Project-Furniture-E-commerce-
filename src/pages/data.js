@@ -46,9 +46,9 @@ export const DummyProducts = [
     },
     {
         id: 5,
-        title: 'Golden Hexagon Metal Wall Clock',
-        image: 'https://dekorspace.com/cdn/shop/files/dk-539-1.jpg?v=1689316294',
-        type: 'decor',
+        title: 'Rustic Twin Storage Bed with 2 Drawers & Industrial Light',
+        image: 'https://i5.walmartimages.com/asr/d415873a-8bae-4d37-b5d7-18090d6b3527.52a8245bded6b40cbc7ae386d3e3cdeb.jpeg',
+        type: 'bed',
         price: 27930,
         crossprice: '35,000',
         description: `A wall clock which makes any room stand out. The black & golden touch

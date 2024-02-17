@@ -9,10 +9,10 @@ const Table = () => {
 
 <div className='grid grid-cols-3 gap-4'>
         
-        {DummyProducts.filter((value)=>value.type==="table").map((e)=>(
+        {DummyProducts.filter((value)=>value.type==="table").map((e , index)=>(
           
           
-              <div className="bg-slate-200">
+              <div key={index} className="bg-slate-200">
                 <img
                   style={{ height: 500, padding: 10 }}
                   src={e.image}

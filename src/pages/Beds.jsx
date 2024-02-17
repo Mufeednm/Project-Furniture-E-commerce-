@@ -20,10 +20,10 @@ const Beds = () => {
       
       <div className='grid grid-cols-3'>
         
-      {DummyProducts.filter((value)=>value.type==="bed").map((e)=>(
+      {DummyProducts.filter((value)=>value.type==="bed").map((e ,index)=>(
         
         
-            <div className="bg-slate-200">
+            <div key={index} className="bg-slate-200">
               <img
                 style={{ height: 500, padding: 10 }}
                 src={e.image}

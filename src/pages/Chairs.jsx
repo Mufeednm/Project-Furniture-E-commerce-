@@ -9,8 +9,8 @@ const Chairs = () => {
       Chairs
       <img src="" alt="" />
       <div className="grid grid-cols-3 gap-4">
-        {DummyProducts.filter((value) => value.type === "chair").map((e) => (
-          <div className="bg-slate-200">
+        {DummyProducts.filter((value) => value.type === "chair").map((e ,index) => (
+          <div key={index} className="bg-slate-200">
             <img
               style={{ height: 500, padding: 10 }}
               src={e.image}

@@ -1,16 +1,24 @@
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
 
 import { Link, useNavigate } from 'react-router-dom'
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { FaUser } from "react-icons/fa";
+import { useContext } from 'react';
+import UseeContext from '../Globalcontext/UseConstext';
 
 
 const Navbar = () => {
+  
+  // console.log( "headpage", logins.name);
+  const {user,setUser,logins,setLogins , }=useContext(UseeContext)
   const navigate = useNavigate();
   const [searchData, setsearchData]=useState("")
   const handleclick= (e)=>{
     e.preventDefault();
     navigate(`/Search/${searchData}`);
-    searchData(" ")
+    setsearchData("")
+
+  
   }
   return (
 
@@ -30,12 +38,20 @@ const Navbar = () => {
         /></form>
     
 
-        <div className="flex gap-0" >
+        <div className="flex items-center gap-4 " >
         
-
-          <Link to={"/cart"} ><button className='text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-8 py-3 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'><AiOutlineShoppingCart /></button></Link>
-          <Link to={"/signin"} ><button className='text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'>Sign in</button></Link>
-          <Link to={"/signup"} ><button className='text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'>Sign up</button></Link>
+        <p  className=''> { logins ? logins.name : "not logged"}</p>
+          <Link to={"/signup"} >
+        
+            
+            <button className="text-4xl">  
+              <FaUser /></button></Link>
+            <div className='cart button'>
+            
+         <button  onClick={()=>{logins? navigate("/cart") : navigate("/Signin") }} className='text-4xl'> 
+         
+           <AiOutlineShoppingCart /></button> 
+            </div>
         </div>
 
       </div>

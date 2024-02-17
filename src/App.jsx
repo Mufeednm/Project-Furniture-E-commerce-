@@ -20,8 +20,8 @@ import UserContextprovider from './Globalcontext/UserContextprovider'
 const App = () => {
   return (
     <div>
-      <Navbar />
       <UserContextprovider>
+      <Navbar />
 
 <Routes>
       
@@ -38,6 +38,7 @@ const App = () => {
 <Route path='/:id'element={<DisplayProduct/>} ></Route>
 // <Route path='/Cart'element={<Cart/>} >   </Route>
 // <Route path='/Search/:term'element={<Search/>} >   </Route>
+// <Route path='/DisplayProduct'element={<DisplayProduct/>} >   </Route>
   
 </Routes>
 
