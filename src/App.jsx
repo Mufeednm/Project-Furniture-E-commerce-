@@ -15,9 +15,11 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Cart from './components/Cart'
 import Search from './components/Search'
-import AdminLogin from './components/Admin/AdminLogin'
-import AdminPage from './components/Admin/AdminPage'
+import AdminPage from './Admin/AdminPage'
+import AdminLogin from './Admin/AdminLogin'
 import UserContextprovider from './Globalcontext/UserContextprovider'
+import Userslist from './Admin/Userslist'
+import Productedit from './Admin/Productedit'
 
 const App = () => {
   return (
@@ -31,6 +33,8 @@ const App = () => {
 
 // <Route path='/AdminLogin'element={<AdminLogin/>} >   </Route>
 // <Route path='/AdminPage'element={<AdminPage/>} >   </Route>
+// <Route path='/Userslist'element={<Userslist/>} >   </Route>
+// <Route path='/Productedit'element={<Productedit/>} >   </Route>
 // <Route path='/Payment'element={<Payment/>} >   </Route>
 // <Route path='/Beds'element={<Beds/>} >   </Route>
 // <Route path='/Chairs'element={<Chairs/>} >   </Route>
