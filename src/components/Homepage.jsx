@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
-import { DummyProducts } from "../pages/data";
+
 import { useNavigate } from "react-router-dom";
+import UseeContext from "../Globalcontext/UseConstext";
 
 const Homepage = () => {
+  const {products} =useContext(UseeContext)
   const nav = useNavigate()
   return (
     <div className="homepage  , bg-white ">
@@ -70,7 +72,7 @@ const Homepage = () => {
       <div className="p-1">
         <h2 className="text-center">Items</h2>
         <div className="grid grid-cols-4">
-          {DummyProducts.map(( value ,index) => {
+          {products.map(( value ,index) => {
             return (
               <div key={index} className="">
                 <img

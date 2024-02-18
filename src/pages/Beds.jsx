@@ -1,7 +1,9 @@
-import React from 'react';
-import { DummyProducts } from './data';
+import React, { useContext } from 'react';
+
 import { useNavigate } from 'react-router-dom'
-const Beds = () => {
+import UseeContext from '../Globalcontext/UseConstext';
+const Beds = () => { 
+  const {products} =useContext(UseeContext)
   const nav =useNavigate()
   return (
     <div>
@@ -20,7 +22,7 @@ const Beds = () => {
       
       <div className='grid grid-cols-3'>
         
-      {DummyProducts.filter((value)=>value.type==="bed").map((e ,index)=>(
+      {products.filter((value)=>value.type==="bed").map((e ,index)=>(
         
         
             <div key={index} className="bg-slate-200">

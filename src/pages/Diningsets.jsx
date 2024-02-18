@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+import UseeContext from '../Globalcontext/UseConstext'
 const Diningsets = () => {
+  const {products} =useContext(UseeContext)
   const nav =useNavigate()
   return (
     <div>Diningsets

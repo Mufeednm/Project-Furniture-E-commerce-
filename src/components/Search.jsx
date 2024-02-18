@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
-import { DummyProducts } from "../pages/data";
+
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import UseeContext from "../Globalcontext/UseConstext";
 
 const Search = () => {
+  const {products} =useContext(UseeContext)
   const nav = useNavigate();
   const { term } = useParams();
   const [filterdata, setfileterdata] = useState([]);
 
   useEffect(() => {
     const filtereddata = () => {
-      const data = DummyProducts.filter((p) =>
+      const data = products.filter((p) =>
         p.title
           .toLowerCase()
           .includes(

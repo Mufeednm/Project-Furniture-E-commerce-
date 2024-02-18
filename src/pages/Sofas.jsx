@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { DummyProducts } from './data'
+
 import { Link } from 'react-router-dom'
+import UseeContext from '../Globalcontext/UseConstext'
 const Sofas = () => {
+  const {products} =useContext(UseeContext)
   const nav =useNavigate()
   return (
 
@@ -15,7 +17,7 @@ const Sofas = () => {
 <h2>hellooo</h2>
 <div className='grid grid-cols-3 gap-4'>
         
-        {DummyProducts.filter((value)=>value.type==="sofa").map((e,index)=>(
+        {products.filter((value)=>value.type==="sofa").map((e,index)=>(
           
           
           

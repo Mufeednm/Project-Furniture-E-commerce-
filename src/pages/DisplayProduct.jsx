@@ -1,17 +1,18 @@
 import React, { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { DummyProducts } from './data';
+
 import { useContext } from 'react';
 import UseeContext from '../Globalcontext/UseConstext';
 
 
 const DisplayProduct = () => {
+
    const navigate = useNavigate()
    
-  const { user, setUser, logins, setLogins, cart, setCart, mydata, setMydata, render, setRender } = useContext(UseeContext);
+  const { user, setUser, logins, setLogins, cart, setCart, mydata, setMydata, render, setRender ,products} = useContext(UseeContext);
   const { id } = useParams();
   useEffect(()=>{
-      const filterdata = DummyProducts.find((e) => e.id == id);
+      const filterdata = products.find((e) => e.id == id);
     setMydata(filterdata)
   },[id,setMydata])
   // console.log(mydata);

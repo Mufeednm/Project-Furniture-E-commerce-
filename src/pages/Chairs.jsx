@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { DummyProducts } from "./data";
+
 import { useNavigate } from "react-router-dom";
+import UseeContext from "../Globalcontext/UseConstext";
 const Chairs = () => {
+  const {products} =useContext(UseeContext)
   const nav = useNavigate();
   return (
     <div>
       Chairs
       <img src="" alt="" />
       <div className="grid grid-cols-3 gap-4">
-        {DummyProducts.filter((value) => value.type === "chair").map((e ,index) => (
+        {products.filter((value) => value.type === "chair").map((e ,index) => (
           <div key={index} className="bg-slate-200">
             <img
               style={{ height: 500, padding: 10 }}

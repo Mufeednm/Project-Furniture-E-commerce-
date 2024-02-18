@@ -1,11 +1,14 @@
-import React from 'react'
-import { DummyProducts } from '../pages/data'
+import React, { useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
+import UseeContext from '../Globalcontext/UseConstext'
 const Productedit = () => {
+  const {products} =useContext(UseeContext)
+  const navigate =useNavigate()
   return (
     <div className="p-1">
       <h2 className="text-center">Products</h2>
       <div className="grid-cols-1">
-        {DummyProducts.map((value, index) => {
+        {products.map((value, index) => {
           return (
             <div key={index} className="bg-orange-300 p-5 gap-3 m-2">
               <div className="flex justify-between">
@@ -21,7 +24,7 @@ const Productedit = () => {
                 </div>
                 <div className="flex items-center">
                   <button
-                    // onClick={() => handleDecrement(value)}
+                    onClick={() =>navigate(`/Adminproductedit/${value.id}`) }
                     className="ml-4 text-amber-200 "
                   >
           Edit
@@ -38,15 +41,7 @@ const Productedit = () => {
             </div>
           );
         })}
-        {/* <div className=" text-center font-bold text-2xl">
-          <h1>
-            Total ={" "}
-            {logins.cart.reduce(
-              (acc, value) => (acc += value.price * value.qty),
-              0
-            )}
-          </h1>
-        </div> */}
+   
       </div>
       </div>
   )

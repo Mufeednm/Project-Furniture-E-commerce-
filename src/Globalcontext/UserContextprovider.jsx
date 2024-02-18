@@ -7,10 +7,11 @@ const UserContextprovider = ({children})=>{
     const [cart,setCart]=useState([])
     const [mydata,setMydata]=useState({})
     const [render,setRender]=useState(false)
+    const [products,setProducts]=useState(DummyProducts)
 
 
     return(
-        <UseeContext.Provider value={{user,setUser,logins,setLogins,cart,setCart,mydata,setMydata,render,setRender}}>
+        <UseeContext.Provider value={{user,setUser,logins,setLogins,cart,setCart,mydata,setMydata,render,setRender ,products,setProducts}}>
             {children}
         </UseeContext.Provider>
     )
