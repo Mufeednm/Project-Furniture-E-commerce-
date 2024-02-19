@@ -2,7 +2,15 @@ import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import UseeContext from '../Globalcontext/UseConstext'
 const Productedit = () => {
-  const {products} =useContext(UseeContext)
+  const {products,setProducts} =useContext(UseeContext)
+  const removeCart = (id) => {
+    // let itemremove = products.filter((v) => v.id != id);
+    // products = itemremove;
+    // 0;
+    setProducts(oldProduct=>(   oldProduct.filter((v) => v.id != id) )
+      
+    )
+  };
   const navigate =useNavigate()
   return (
     <div className="p-1">
@@ -32,7 +40,7 @@ const Productedit = () => {
               
                 </div>
                 <button
-                //   onClick={() => removeCart(value.id)}
+                  onClick={() => removeCart(value.id)}
                   className="ml-4 text-red-500"
                 >
                   Remove

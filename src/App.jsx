@@ -21,7 +21,7 @@ import UserContextprovider from './Globalcontext/UserContextprovider'
 import Userslist from './Admin/Userslist'
 import Productedit from './Admin/Productedit'
 import Adminproductedit from './Admin/Adminproductedit'
-
+import Addproduct from './Admin/addproduct'
 const App = () => {
   return (
     <div>
@@ -32,6 +32,8 @@ const App = () => {
       
 <Route path='/'element={<Homepage/>} >   </Route>
 
+
+// <Route path='/Addproduct'element={<Addproduct/>} >   </Route>
 // <Route path='/AdminLogin'element={<AdminLogin/>} >   </Route>
 // <Route path='/AdminPage'element={<AdminPage/>} >   </Route>
 // <Route path='/Userslist'element={<Userslist/>} >   </Route>

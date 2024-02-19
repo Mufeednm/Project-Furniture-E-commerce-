@@ -3,22 +3,8 @@ import React, { useContext } from "react";
 import { useState } from "react";
 import UseeContext from "../Globalcontext/UseConstext";
 const Cart = () => {
-  const [count, setCount] = useState(0);
-  const removeCart = (id) => {
-    let itemremove = logins.cart.filter((v) => v.id != id);
-    logins.cart = itemremove;
-    0;
-  };
 
-  const handleIncrement = (value) => {
-    setCount((value.qty += 1));
-  };
 
-  const handleDecrement = (value) => {
-    if (value.qty && value.qty > 1) {
-      setCount((value.qty -= 1));
-    }
-  };
   const {
     user,
     setUser,
@@ -31,6 +17,25 @@ const Cart = () => {
     render,
     setRender,
   } = useContext(UseeContext);
+
+  const [count, setCount] = useState(0);
+
+  const removeCart = (id) => {
+  setLogins(oldData=>({
+    ...oldData,
+    cart: oldData.cart.filter(v=> v.id!=id)
+  }))
+  };
+
+  const handleIncrement = (value) => {
+    setCount((value.qty += 1));
+  };
+
+  const handleDecrement = (value) => {
+    if (value.qty && value.qty > 1) {
+      setCount((value.qty -= 1));
+    }
+  };
   console.log("in my cart", logins.cart);
   return (
     <div className="p-1">

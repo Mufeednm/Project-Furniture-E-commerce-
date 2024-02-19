@@ -8,7 +8,8 @@ const AdminPage = () => {
          
          <div className=' flex  gap-4 '>
           <button  onClick={()=>navigate("/Userslist")}  className=' bg-slate-200'>USERS</button>
-          <button onClick={()=>navigate("/Productedit")} className=' bg-red-600'>Product Details</button>
+          <button onClick={()=>navigate("/Productedit")} className=' bg-slate-200'>Product Details</button>
+          <button onClick={()=>navigate("/Addproduct")} className=' bg-slate-200'>ADD Product </button>
          </div>
     
     
