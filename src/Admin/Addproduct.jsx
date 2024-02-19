@@ -26,47 +26,122 @@ const Addproduct = () => {
     navigate ("/Productedit")
   }
   return (
-    <div >addproduct
 
-<form  className=' bg-orange-700'
-onSubmit={(e) => handlesubmit(e)}
->
+    <div className="max-w-sm mx-auto">
+    <div className="w-96 backdrop-blur-lg bg-opacity-80 rounded-lg shadow-lg p-5 bg-gray-900 text-white">
+      <h2 className="text-2xl font-bold pb-5">ADD PRODUCT</h2>
+      <form onSubmit={(e) => handlesubmit(e)}>
+        <div className="mb-5">
+          <label htmlFor="titlee" className="block mb-2 text-sm font-medium">
+            title
+          </label>
+          <input
+            type="text"
+            name='title'
       
-      <label> title :</label>
-      <input
-        name='title'
-   
-        type="text"
-      />{" "}
-      <br />
-
-      <label> type:</label>
-      <input
-      name ='type'
-    
-        type="text"
-      />{" "}
-      <br />
-
-      <label> price :</label>
-      <input
-       name = 'price'
-     
-        type="number"
-      />
-      <br />
-      <label> image :</label>
-      <input
-       name = "image"
-        placeholder
-        type="file"
-
-      />
+            className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full py-2.5 px-4"
+            placeholder="Title"
+            required
+          />
+        </div>
+        <div className="mb-5">
+          <label htmlFor="titlee" className="block mb-2 text-sm font-medium">
+            type
+          </label>
+          <input
+            type="text"
+            name='type'
       
-
-      <button type="submit">add</button>
-    </form>
+            className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full py-2.5 px-4"
+            placeholder="Type"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label htmlFor="email" className="block mb-2 text-sm font-medium">
+            PRICE
+          </label>
+          <input
+            type="number"
+         name='price'
+            id="price"
+            className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full py-2.5 px-4"
+            placeholder="price"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            htmlFor="password"
+            className="block mb-2 text-sm font-medium"
+          >
+            Image
+          </label>
+          <input
+            type="file"
+      name='image'
+            id="password"
+            className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-full py-2.5 px-4"
+            placeholder="*********"
+            required
+          />
+        </div>
+        <div>
+          <p className="text-red-500 pb-5"></p>
+        </div>
+        <div className="flex items-center justify-between mb-4">
+          <button
+            type="submit"
+            className="text-white bg-purple-600 hover:bg-purple-700 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 px-5 w-full sm:w-auto"
+          >
+            ADD
+          </button>
+        
+        </div>
+      </form>
     </div>
+  </div>
+//     <div >addproduct
+    
+// <form  className=' bg-orange-700'
+// onSubmit={(e) => handlesubmit(e)}
+// >
+      
+//       <label> title :</label>
+//       <input
+//         name='title'
+   
+//         type="text"
+//       />{" "}
+//       <br />
+
+//       <label> type:</label>
+//       <input
+//       name ='type'
+    
+//         type="text"
+//       />{" "}
+//       <br />
+
+//       <label> price :</label>
+//       <input
+//        name = 'price'
+     
+//         type="number"
+//       />
+//       <br />
+//       <label> image :</label>
+//       <input
+//        name = "image"
+//         placeholder
+//         type="file"
+
+//       />
+      
+
+//       <button type="submit">add</button>
+//     </form>
+//     </div>
   )
 }
 

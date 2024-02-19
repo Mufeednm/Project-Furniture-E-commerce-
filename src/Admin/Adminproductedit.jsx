@@ -41,14 +41,22 @@ navigate ("/Productedit")
     <div className=" bg-red-400">
       {" "}
       Adminproductedit
-      <form onSubmit={(e) => handlesubmit(e)}>
-      
-        <label> title :</label>
+      <form className=" " onSubmit={(e) => handlesubmit(e)}>
+      <div className=" parent flex flex-row ">
+
+      <div className="image h-44 w-44">
+
+      <img src={find.image} alt="" />
+
+      </div>
+      <div>
+        
+        <label className=""> title :</label>
         <input
           onChange={(e) => setTitle(e.target.value)}
           placeholder={find.title}
           type="text"
-        />{" "}
+          />{" "}
         <br />
 
         <label> type:</label>
@@ -56,7 +64,7 @@ navigate ("/Productedit")
           onChange={(e) => setType(e.target.value)}
           placeholder={find.type}
           type="text"
-        />{" "}
+          />{" "}
         <br />
 
         <label> price :</label>
@@ -64,16 +72,17 @@ navigate ("/Productedit")
           onChange={(e) => setPrice(e.target.value)}
           placeholder={find.price}
           type="number"
-        />
+          />
         <br />
         <label> image :</label>
         <input
           onChange={(e) => setImage(e.target.value)}
           placeholder
           type="text"
-        />
-        <img src={find.image} alt="" />
+          />
         <button type="submit">add</button>
+          </div>
+          </div>
       </form>
     </div>
   );
