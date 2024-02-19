@@ -21,7 +21,7 @@ import UserContextprovider from './Globalcontext/UserContextprovider'
 import Userslist from './Admin/Userslist'
 import Productedit from './Admin/Productedit'
 import Adminproductedit from './Admin/Adminproductedit'
-import Addproduct from './Admin/addproduct'
+import Addproduct from './Admin/Addproduct'
 const App = () => {
   return (
     <div>
