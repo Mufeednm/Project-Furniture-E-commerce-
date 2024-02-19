@@ -84,7 +84,6 @@ const Navbar = () => {
           <Link to={"/Beds"} > <button>Beds</button> </Link>
           <Link to={"/Table"} > <button>Table</button> </Link>
           <Link to={"/Chairs"} > <button>Chairs</button> </Link>
-          <Link to={"/Diningsets"} > <button>Dining sets</button> </Link>
           <Link to={"/Wardrobes"} > <button>Wardrobes</button> </Link>
       
         </div>

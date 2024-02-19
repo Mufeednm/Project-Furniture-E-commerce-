@@ -1,14 +1,18 @@
 import React, { useContext } from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
-
 import { useNavigate } from "react-router-dom";
 import UseeContext from "../Globalcontext/UseConstext";
+import Footer from "./Footer";
 
 const Homepage = () => {
+  
   const {products} =useContext(UseeContext)
   const nav = useNavigate()
   return (
+    <div>
+
+    <Navbar />
     <div className="homepage  , bg-white ">
       <Link to={"/Sofas"}>
         {" "}
@@ -16,7 +20,7 @@ const Homepage = () => {
           className="p-2"
           src="https://hometown.gumlet.io/media/cms/icons/new-arrival2.jpg?w=1536&dpr=1.3"
           alt=""
-        />{" "}
+          />{" "}
       </Link>
 
       <div className="  text-center">
@@ -29,7 +33,7 @@ const Homepage = () => {
                 style={{ height: 500, padding: 10 }}
                 src="https://homesofrajasthan.com/wp-content/uploads/2023/05/bd19p-860x860.jpeg"
                 alt=""
-              />
+                />
               <div className="text-center p-3  ">
                 <h1 className="">BEDS</h1>
                 <h1> </h1>
@@ -44,7 +48,7 @@ const Homepage = () => {
                 style={{ height: 500, padding: 10 }}
                 src="https://homesofrajasthan.com/wp-content/uploads/2022/11/sauvage-chesterfield-leather-sofa-3-910x1155-1.jpg"
                 alt=""
-              />
+                />
 
               <div className="text-center p-3  ">
                 <h1 className="">Premium Leather Sofa</h1>
@@ -59,7 +63,7 @@ const Homepage = () => {
                 style={{ height: 500, padding: 10 }}
                 src="https://homesofrajasthan.com/wp-content/uploads/2023/04/1-17.jpg"
                 alt=""
-              />
+                />
 
               <div className="text-center p-3  ">
                 <h1 className="">First Class Dining Table</h1>
@@ -79,7 +83,7 @@ const Homepage = () => {
                   style={{ height: 500, padding: 10 }}
                   src={value.image}
                   alt="" onClick={()=>nav(`/${value.id}`)}
-                />
+                  />
 
                 <div className="text-center p-3 ">
                   <h1 className="">{value.title}</h1>
@@ -93,6 +97,8 @@ const Homepage = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+          </div>
   );
 };
 

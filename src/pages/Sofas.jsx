@@ -3,12 +3,16 @@ import { useNavigate } from 'react-router-dom'
 
 import { Link } from 'react-router-dom'
 import UseeContext from '../Globalcontext/UseConstext'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
 const Sofas = () => {
   const {products} =useContext(UseeContext)
   const nav =useNavigate()
   return (
 
-
+<div>
+<Navbar/>
     <div className=''>
       <div>
 <img src="https://mysleepyhead.com/media/wysiwyg/uploads/HomePage/Sept30DesktopbannerSofa.jpg" alt="" />
@@ -21,7 +25,7 @@ const Sofas = () => {
           
           
           
-              <div key={index} className="bg-slate-200">
+          <div key={index} className="bg-slate-200">
                 <img
                   style={{ height: 500, padding: 10 }}
                   src={e.image}
@@ -34,11 +38,13 @@ const Sofas = () => {
                 </div>
               </div>
             
-  
+            
   ))}
   </div>
 
     </div>
+<Footer/>
+            </div>
   )
 }
 

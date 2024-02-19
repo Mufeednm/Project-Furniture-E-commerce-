@@ -15,7 +15,7 @@ navigate("/Adminpage")
   }
 
   return (
-    <div className="max-w-sm mx-auto">
+    <div className="h-screen bg-zinc-700  flex items-center justify-center r">
     <div className="w-96 backdrop-blur-lg bg-opacity-80 rounded-lg shadow-lg p-5 bg-gray-900 text-white">
       <h2 className="text-2xl font-bold pb-5">ADMIN</h2>
       <form 

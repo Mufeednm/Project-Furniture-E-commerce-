@@ -2,7 +2,12 @@
 import React, { useContext } from "react";
 import { useState } from "react";
 import UseeContext from "../Globalcontext/UseConstext";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
+
 const Cart = () => {
+ 
 
 
   const {
@@ -38,6 +43,8 @@ const Cart = () => {
   };
   console.log("in my cart", logins.cart);
   return (
+    <div>
+      <Navbar/>
     <div className="p-1">
       <h2 className="text-center">Items</h2>
       <div className="grid-cols-1">
@@ -50,7 +57,7 @@ const Cart = () => {
                   src={value.image}
                   alt=""
                   onClick={() => nav(`/${value.id}`)}
-                />
+                  />
                 <div className="flex-grow mx-4">
                   <h1 className="text-lg font-bold">{value.title}</h1>
                   <h1 className="text-gray-600"> ₹{value.price}</h1>
@@ -59,7 +66,7 @@ const Cart = () => {
                   <button
                     onClick={() => handleDecrement(value)}
                     className="bg-gray-200 px-2 py-2 rounded-l "
-                  >
+                    >
                     {" "}
                     -
                   </button>
@@ -67,7 +74,7 @@ const Cart = () => {
                   <button
                     onClick={() => handleIncrement(value)}
                     className="bg-gray-200 px-2 py-2 rounded-l "
-                  >
+                    >
                     {" "}
                     +
                   </button>
@@ -75,7 +82,7 @@ const Cart = () => {
                 <button
                   onClick={() => removeCart(value.id)}
                   className="ml-4 text-amber-200"
-                >
+                  >
                   Remove
                 </button>
               </div>
@@ -88,11 +95,13 @@ const Cart = () => {
             {logins.cart.reduce(
               (acc, value) => (acc += value.price * value.qty),
               0
-            )}
+              )}
           </h1>
         </div>
       </div>
     </div>
+<Footer/>
+              </div>
   );
 };
 

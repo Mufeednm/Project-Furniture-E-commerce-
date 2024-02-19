@@ -2,19 +2,36 @@ import React, { useContext } from 'react'
 
 import { useNavigate } from 'react-router-dom'
 import UseeContext from '../Globalcontext/UseConstext'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
+
 const Table = () => {
   const {products} =useContext(UseeContext)
   const nav =useNavigate()
   return (
-    <div>Table
+    <div>
+      <Navbar/>
+    <div> <figure className="relative max-w-2xl transition-all duration-500">
+        <a href="#">
+          <img
+            className="max-w-screen-2xl"
+            src="https://gambrick.com/wp-content/uploads/2022/02/how-much-space-do-you-need-around-a-dining-table.jpg"
+            alt="image description"
+            />
+        </a>
+        <figcaption className="absolute px-7 text-lg text-black bottom-6 w-full text-justify">
+       
+        </figcaption>
+      </figure>
 
 
-<div className='grid grid-cols-3 gap-4'>
+<div className='grid grid-cols-3 gap-4 p-10 mt-10'>
         
         {products.filter((value)=>value.type==="table").map((e , index)=>(
           
           
-              <div key={index} className="bg-slate-200">
+          <div key={index} className="bg-slate-200">
                 <img
                   style={{ height: 500, padding: 10 }}
                   src={e.image}
@@ -31,6 +48,8 @@ const Table = () => {
   </div>
 
     </div>
+<Footer/>
+  </div>
   )
 }
 

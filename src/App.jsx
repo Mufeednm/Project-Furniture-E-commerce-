@@ -7,7 +7,6 @@ import Homepage from './components/Homepage'
 import Payment from './components/Payment'
 import Beds from './pages/Beds'
 import Chairs from './pages/Chairs'
-import Dinigsets from './pages/Diningsets'
 import Sofas from './pages/Sofas'
 import Table from './pages/Table'
 import Wardrobes from './pages/Wardrobes'
@@ -26,12 +25,12 @@ const App = () => {
   return (
     <div>
       <UserContextprovider>
-      <Navbar />
 
+    
 <Routes>
       
-<Route path='/'element={<Homepage/>} >   </Route>
 
+<Route path='/'element={<Homepage/>} >   </Route>
 
 // <Route path='/Addproduct'element={<Addproduct/>} >   </Route>
 // <Route path='/AdminLogin'element={<AdminLogin/>} >   </Route>
@@ -42,7 +41,6 @@ const App = () => {
 // <Route path='/Payment'element={<Payment/>} >   </Route>
 // <Route path='/Beds'element={<Beds/>} >   </Route>
 // <Route path='/Chairs'element={<Chairs/>} >   </Route>
-// <Route path='/Diningsets'element={<Dinigsets/>} >   </Route>
 // <Route path='/Sofas'element={<Sofas/>} >   </Route>
 // <Route path='/Table'element={<Table/>} >   </Route>
 // <Route path='/Wardrobes'element={<Wardrobes/>} >   </Route>
@@ -55,7 +53,7 @@ const App = () => {
   
 </Routes>
 
-<Footer/>
+
       </UserContextprovider>
 
     </div>

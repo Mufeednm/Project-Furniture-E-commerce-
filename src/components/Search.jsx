@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import UseeContext from "../Globalcontext/UseConstext";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Search = () => {
   const {products} =useContext(UseeContext)
@@ -28,6 +30,8 @@ const Search = () => {
   }, [term, setfileterdata]);
 
   return (
+    <div>
+      <Navbar/>
     <div className="    grid grid-cols-3   gap-6">
       {filterdata.map((val) => {
         return (
@@ -37,7 +41,7 @@ const Search = () => {
               src={val.image}
               alt=""
               onClick={() => nav(`/${val.id}`)}
-            />
+              />
 
             <div className="text-center p-3 ">
               <h1 className="">{val.title}</h1>
@@ -48,6 +52,8 @@ const Search = () => {
         );
       })}
     </div>
+    <Footer/>
+      </div>
   );
 };
 

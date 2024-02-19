@@ -2,12 +2,15 @@ import React, { useContext } from 'react'
 
 import { useNavigate } from 'react-router-dom'
 import UseeContext from '../Globalcontext/UseConstext'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
 const Wardrobes = () => {
   const {products} =useContext(UseeContext)
   const nav =useNavigate()
 return (
     <div>
-
+<Navbar/>
       <figure className="relative max-w-5xl transition-all duration-500">
         <a href="#">
           <img
@@ -42,6 +45,7 @@ return (
   
   ))}
   </div>
+<Footer/>
     </div>
   )
 }

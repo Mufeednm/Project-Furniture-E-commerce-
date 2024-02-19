@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import UseeContext from '../Globalcontext/UseConstext'
+import { Link } from 'react-router-dom'
+import { IoMdArrowBack } from "react-icons/io";
 const Productedit = () => {
   const {products,setProducts} =useContext(UseeContext)
   const removeCart = (id) => {
@@ -13,7 +15,12 @@ const Productedit = () => {
   };
   const navigate =useNavigate()
   return (
-    <div className="p-1">
+    <div className="p-1 bg-slate-600">
+        <Link to={"/AdminPage"} >
+          <button          
+              className="text-white bg-slate-400 hover:bg-slate-500 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm py-2.5 px-5 w-full sm:w-auto"> 
+              <IoMdArrowBack /> </button>
+              </Link>
       <h2 className="text-center">Products</h2>
       <div className="grid-cols-1">
         {products.map((value, index) => {
