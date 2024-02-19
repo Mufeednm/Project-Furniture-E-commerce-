@@ -31,7 +31,7 @@ const Navbar = () => {
             <h2 className='text-3xl lg:text-5xl'>FurniBreeze</h2>
           </Link>
 
-          <div className='flex items-center ml-64'>
+          <div className='flex items-center lg:ml-32'>
             <form onSubmit={handleSearchClick} className='flex flex-wrap lg:flex-nowrap items-center'>
               <div className='relative w-full lg:w-72'>
                 <input
