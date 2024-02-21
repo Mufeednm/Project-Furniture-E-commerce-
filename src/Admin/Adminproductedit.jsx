@@ -39,7 +39,7 @@ navigate ("/Productedit")
   console.log(find);
   return (
     <div className=" bg-red-400">
-      {" "}
+   
       Adminproductedit
       <form className=" " onSubmit={(e) => handlesubmit(e)}>
       <div className=" parent flex flex-row ">

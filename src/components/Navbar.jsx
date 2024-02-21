@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className='navbar flex flex-col lg:flex-row justify-between items-center lg:items-stretch px-4 lg:px-16 py-2 lg:py-4'>
         <div className='flex items-center'>
           <Link to='/'>
-            <h2 className='text-3xl lg:text-5xl'>FurniBreeze</h2>
+            <h2 className='text-3xl lg:text-3xl'>FurniBreeze</h2>
           </Link>
 
           <div className='flex items-center lg:ml-32'>
